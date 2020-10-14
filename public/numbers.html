@@ -2,9 +2,24 @@
 <html>
 	<head>
 		<style>
-			table {
-            	border-collapse: collapse;
+            #intro {
+            	display: flex;
+                flex-direction: row;
+                font-size:20px;
+            }
+            #table {
+                display: flex;
+                flex-direction: row;
   			}
+            nav, aside {
+            	flex: 0 1 30%;
+            }
+            main {
+            	flex: 0 1 40%;
+            }
+            table {
+            	border-collapse: collapse;
+            }
   			thead {
    				background-color:black;
   				text-color:white;
@@ -15,9 +30,22 @@
   			tfoot tr {
   				background-color:darkgreen;
   			}
+            th {
+            	border: 1px solid black;
+            }
             #latin {
+                display: flex;
+                flex-direction: row;
+            }
+            #latin main {
             	background-color: red;
-                border: 30px solid lightgreen;
+            	border: 30px solid lightgreen;
+            }
+            #latin nav, #latin aside {
+            	flex: 0 1 10%;
+            }
+            #latin main {
+            	flex: 0 1 80%;
             }
             #graphs img {
             	float: right;
@@ -56,8 +84,10 @@
  	</head>
 
 <body>
-	<p>Welcome to my Page of Numbers</p>
-	<table>
+	<div id="intro"><nav>
+		<p>Welcome to my Page of Numbers</p>
+	</nav><main></main><aside></aside></div><br>
+	<div id="table"><nav></nav><main><table>
 		<thead>
 			<tr>
 				<th>n</th>
@@ -148,12 +178,12 @@
 				<th>Exponential</th>
 			</tr>
 		</tfoot>
-	</table>
-	<div id="latin">
+	</table></main><aside></aside></div><br>
+	<div id="latin"><nav></nav><main>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 		</p>
-	</div>
+	</main><aside></aside></div><br>
     <div id="graphs">
     	<div><nav></nav><main>
             <p>
@@ -165,25 +195,25 @@
         	<p>
         		Quadratic
             </p>
-            <img src="images/2.png" alt="Linear Graph">
+            <img src="images/2.png" alt="Quadratic Graph">
         </main><aside></aside></div>
         <div><nav></nav><main>
         	<p>
         		Cubic
             </p>
-            <img src="images/3.png" alt="Linear Graph">
+            <img src="images/3.png" alt="Cubic Graph">
         </main><aside></aside></div>
         <div><nav></nav><main>
         	<p>
         		Factorial
             </p>
-            <img src="images/4.png" alt="Linear Graph">
+            <img src="images/4.png" alt="Factorial Graph">
         </main><aside></aside></div>
         <div><nav></nav><main>
         	<p>
         		Exponential
             </p>
-            <img src="images/5.png" alt="Linear Graph">
+            <img src="images/5.png" alt="Exponential Graph">
         </main><aside></aside></div>
     </div>
     <div id="page">
