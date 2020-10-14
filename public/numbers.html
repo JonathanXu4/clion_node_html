@@ -2,11 +2,6 @@
 <html>
 	<head>
 		<style>
-            #intro {
-            	display: flex;
-                flex-direction: row;
-                font-size:20px;
-            }
             #table {
                 display: flex;
                 flex-direction: row;
@@ -40,12 +35,11 @@
             #latin main {
             	background-color: red;
             	border: 30px solid lightgreen;
+                outline: 1px solid black;
+                flex: 0 1 80%;
             }
             #latin nav, #latin aside {
             	flex: 0 1 10%;
-            }
-            #latin main {
-            	flex: 0 1 80%;
             }
             #graphs img {
             	float: right;
@@ -84,9 +78,9 @@
  	</head>
 
 <body>
-	<div id="intro"><nav>
+	<div id="intro">
 		<p>Welcome to my Page of Numbers</p>
-	</nav><main></main><aside></aside></div><br>
+	</div><br>
 	<div id="table"><nav></nav><main><table>
 		<thead>
 			<tr>
