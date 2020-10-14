@@ -21,31 +21,36 @@
             }
             #graphs img {
             	float: right;
-                height: 20%;
-                width: 20%;
+                height: 300px;
+                width: 300px;
                 object-fit: contain;
             }
             #graphs div {
                 border-bottom: 1px;
                 overflow: hidden;
                 vertical-align: bottom;
+                display: flex;
+                flex-direction: row;
+                border: 2px;
+            }
+            #graphs nav, #graphs aside {
+            	flex: 0 1 20%;
+            }
+            #graphs main {
+            	flex: 0 1 60%;
             }
             #page {
                 display: flex;
                 flex-direction: row;
                 border: 2px solid black;
             }
-            nav {
+            #page nav, #page aside {
             	flex: 0 1 10%;
                 background-color: lightyellow;
             }
-            main {
+            #page main {
             	flex: 0 1 80%;
                 background-color: tan;
-            }
-            aside {
-            	flex: 0 1 10%;
-                background-color: lightyellow;
             }
 		</style>
  	</head>
@@ -150,36 +155,36 @@
 		</p>
 	</div>
     <div id="graphs">
-    	<div>
-        	<p>
+    	<div><nav></nav><main>
+            <p>
         		Linear
             </p>
-            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Linear Graph">
-        </div>
-        <div>
+            <img src="images/1.png" alt="Linear Graph">
+        </main><aside></aside></div>
+        <div><nav></nav><main>
         	<p>
         		Quadratic
             </p>
-            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Linear Graph">
-        </div>
-        <div>
+            <img src="images/2.png" alt="Linear Graph">
+        </main><aside></aside></div>
+        <div><nav></nav><main>
         	<p>
         		Cubic
             </p>
-            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Linear Graph">
-        </div>
-        <div>
+            <img src="images/3.png" alt="Linear Graph">
+        </main><aside></aside></div>
+        <div><nav></nav><main>
         	<p>
         		Factorial
             </p>
-            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Linear Graph">
-        </div>
-        <div>
+            <img src="images/4.png" alt="Linear Graph">
+        </main><aside></aside></div>
+        <div><nav></nav><main>
         	<p>
         		Exponential
             </p>
-            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Linear Graph">
-        </div>
+            <img src="images/5.png" alt="Linear Graph">
+        </main><aside></aside></div>
     </div>
     <div id="page">
     	<nav>
